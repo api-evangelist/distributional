@@ -1,0 +1,13 @@
+# Distributional
+
+> Something new is coming.
+
+This site is the canonical reference for Distributional. It is currently a holding page; more is coming. Every page has a plain-markdown twin for direct LLM ingestion (linked below). For one-shot ingestion, see [llms-full.txt](https://distributional.com/llms-full.txt).
+
+## Pages
+
+- [Home](https://distributional.com/index.md): Current status of Distributional
+
+## Optional
+
+- [Full corpus (single file)](https://distributional.com/llms-full.txt): All page markdown concatenated

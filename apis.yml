@@ -1,7 +1,26 @@
 aid: distributional
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/distributional.png
 name: Distributional
-description: Distributional is a company surfaced as a portfolio company of a16z and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Distributional is an a16z-backed company (security contact Scott Clark) tracked in the
+  API Evangelist network. As of July 2026 distributional.com serves a pre-launch holding
+  page ("Something new is coming") with no public API, backend, or authentication surface.
+  The site does publish machine-readable discovery surfaces, however: an RFC 9116
+  security.txt at /.well-known/security.txt and an llms.txt with plain-markdown page twins
+  for direct LLM ingestion. This profile captures those published surfaces and probed
+  domain-security posture, and will be enriched further once the company launches a
+  developer or API offering.
 url: https://raw.githubusercontent.com/api-evangelist/distributional/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +30,37 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- AI Testing
+- Reliability
+- MLOps
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/distributional-vulnerability-disclosure.yml
+- type: Security
+  url: well-known/distributional-security.txt
+- type: DomainSecurity
+  url: security/distributional-domain-security.yml
+- type: Website
+  url: https://distributional.com
+- type: SecurityTxt
+  url: well-known/distributional-security.txt
+- type: WellKnown
+  url: well-known/distributional-well-known.yml
+- type: LLMsTxt
+  url: llms/distributional-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
